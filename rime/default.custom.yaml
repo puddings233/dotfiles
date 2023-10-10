@@ -1,0 +1,5 @@
+patch:
+  "menu/page_size": 9
+  __include: rime_ice_suggestion:/  #need rime-ice package from aur
+  "key_binder/bindings":
+     - { when: has_menu, accept: 0, send: Page_Down }
