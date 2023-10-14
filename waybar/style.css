@@ -16,6 +16,7 @@ window#waybar {
 #network,
 #wireplumber,
 #backlight,
+#bluetooth,
 #battery,
 #tray{
 	padding: 0 10px;
@@ -28,7 +29,7 @@ window#waybar {
 }
 
 #window{
-	background-color: #44DF42;
+	background-color: #43DF41;
 }
 
 #workspaces {
@@ -59,8 +60,12 @@ window#waybar {
 	background-color: #9E9D9E;
 }
 
-#battery, #battery.charging, #battery.plugged {
+#bluetooth {
 	background-color: #4C4C4B;
+}
+
+#battery, #battery.charging, #battery.plugged {
+	background-color: #9DD5A7;
 }
 
 #battery.critical:not(.charging) {

@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["hyprland/window", "hyprland/workspaces", "cpu", "memory"],
 	"modules-center": ["clock"],
-	"modules-right": ["network", "wireplumber", "backlight", "battery", "tray"],
+	"modules-right": ["network", "wireplumber", "backlight", "bluetooth", "battery", "tray"],
 
 	"hyprland/window": {
     		"format": " {title}",
@@ -67,6 +67,14 @@
 	"format": "{icon}{percent}%",
 	"format-icons": [" ", " ", " ", " "],
 	"scroll-step": 5
+	},
+
+	"bluetooth": {
+	"format": " {status}",
+	"format-disabled": "", 
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias}({device_battery_percentage}%)",
+	"on-click": "kitty bluetoothctl"
 	},
 
 	"battery": {
