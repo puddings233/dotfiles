@@ -1,0 +1,78 @@
+{
+	"hyprland/workspaces": {
+	"all-outputs": true,
+	"active-only": false,
+	"format": "{icon}",
+	"format-icons": {
+		"active": "",
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"6": "",
+		"7": "",
+		"8": "",
+		"9": ""
+    }
+  },
+	"hyprland/window": {
+	"format": "{title}",
+	"max-length": 25
+  },
+	"backlight": {
+	"device": "amd_backlight",
+	"format": "{icon}{percent}%",
+	"format-icons": [" ", " ", " ", " "],
+	"scroll-step": 5
+  },
+	"bluetooth": {
+	"format": " {status}",
+	"format-disabled": "", 
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias}({device_battery_percentage}%)",
+	"on-click": "kitty bluetoothctl"
+	},
+	"battery": {
+	"bat": "BAT1",
+	"adapter": "ACAD",
+	"full-at": 100,
+	"states": {
+	"warning": 15,
+	"critical": 5
+		},
+	"format-time": "{H}:{M}",
+	"format": " {capacity}%"
+  },
+	"cpu": {
+	"format": " {usage}%",
+	"interval": 30,
+	"on-click": "kitty htop"
+  },
+	"clock": {
+	"interval": 60,
+	"format": " {:%H:%M}",
+	"tooltip-format": "{:%Y-%m-%d %H:%M}"
+  },
+	"network": {
+	"interval": 30,
+	"format-wifi": " {essid}",
+	"format-ethernet": " Wired",
+	"format-disconnected": " Disconnected",
+	"tooltip-format-wifi": "{ipaddr}/{cidr}",
+	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
+	"tooltip-format-disconnected": "😭",
+	"on-click": "kitty nmtui"
+  },
+	"wireplumber": {
+	"format": "{icon}{volume}%",
+	"format-muted": " ",
+	"format-icons": [" ", " ", " "],
+	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+	},
+	"tray": {
+	"icon-size": 20,
+	"spacing": 5
+  }
+}

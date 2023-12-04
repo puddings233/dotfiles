@@ -1,83 +1,153 @@
+@import "colors-waybar.css"; /* need a link (ln -s ~/.cache/wal/colors-waybar.css .) */
+
 * {
-	font-family: Source Code Pro,Material-Design-Iconic-Font;
-	font-size: 15px;
+    font-family: Source Code Pro,Material-Design-Iconic-Font;
+    font-size: 20px;
+    font-weight: bold;
+    color: @foreground;
+    border: none;
 }
 
 window#waybar {
-	background-color: rgba(43, 48, 59, 0.5);
-	color: #ffffff;
-	transition-property: background-color;
+  background-color: @background;
+  border: 2px solid alpha(@color0, 0.3);
 }
 
-#window,
-#workspaces,
-#cpu,
-#memory,
-#network,
-#wireplumber,
-#backlight,
-#bluetooth,
-#battery,
-#tray{
-	padding: 0 10px;
-	margin: 0 5px;
-	color: #ffffff;
-	margin-left: 0;
-	margin-right: 0;
-	border-top: 3px solid rgba(100, 114, 125, 0.5);
-	border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+tooltip {
+  background-color: @color8;
+  border-radius: 12px;
+  border: 1px solid @background;
+  padding: 5px;
 }
 
-#window{
-	background-color: #43DF41;
+tooltip label {
+  color: @color5;
+  font-size: 16px;
+}
+
+#custom-dot {
+  font-size: 14px;
+  color: alpha(@color7, 0.6);
+  background: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#custom-dot-alt {
+  font-size: 14px;
+  color: alpha(@color7, 0.8);
+  background: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #workspaces {
-	background-color: #D4DAD0;
+  font-size: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 18px;
+  border: 2px solid alpha(@color7, 0.8);
 }
 
-#cpu {
-	background-color: #1C1C1C;
+button:hover {
+  box-shadow: none;
 }
 
-#memory {
-	background-color: #F4CE38;
+#workspaces button:hover {
+  background: transparent;
+  border: none;
+}
+#workspaces button:hover label {
+  background: transparent;
+  color: @color5;
+  border: none;
 }
 
-#network {
-	background-color: #448360;
+#workspaces button label {
+  color: @color4;
 }
 
-#wireplumber {
-	background-color: #817C6D;
+#workspaces button.empty label {
+  color: alpha(@color7, 0.6);
 }
 
-#wireplumber.muted {
-	background-color: #AF5F6C;
+#workspaces button.visible label{
+  color: @color4;
 }
 
-#backlight {
-	background-color: #9E9D9E;
+#workspaces button.active label {
+  color: @color2;
 }
 
-#bluetooth {
-	background-color: #4C4C4B;
+#workspaces button.urgent label{
+  background-color: @color1;
+  color: @foreground;
 }
 
-#battery, #battery.charging, #battery.plugged {
-	background-color: #9DD5A7;
-}
 
-#battery.critical:not(.charging) {
-	background-color: #AF5F6C;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+#cpu, 
+#clock, 
+#network, 
+#backlight, 
+#bluetooth,
+#wireplumber, 
+#battery, 
+#tray{
+  /*margin-top: 5px;*/
+  /*margin-bottom: 5px;*/
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #tray {
-	background-color: #5F5F60;
+  background-color: alpha(@color7, 0.7);
+  border-radius: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  min-width: 20px;
 }
 
+#battery {
+  color: @color3;
+}
+
+#wireplumber {
+  color: @color2;
+}
+
+#backlight {
+  color: @color6;
+}
+
+#bluetooth {
+  color: @color5;
+}
+#network {
+  color: @color4;
+}
+
+#clock {
+  color: @color3;
+}
+
+#cpu {
+  color: @color9;
+}
+
+#custom-logo {
+  background-color: @background;
+  color: @color5;
+  margin-left: 20px;
+  margin-right: 10px;
+}

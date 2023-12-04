@@ -1,95 +1,37 @@
 {
-	"layer": "top",
-	"modules-left": ["hyprland/window", "hyprland/workspaces", "cpu", "memory"],
-	"modules-center": ["clock"],
-	"modules-right": ["network", "wireplumber", "backlight", "bluetooth", "battery", "tray"],
-
-	"hyprland/window": {
-    		"format": " {title}",
-		"max-length": 30
-		},
-
-	"hyprland/workspaces": {
-	"format": "{icon}",
-	"format-icons": {
-		"active": "",
-		"1": "",
-		"2": "",
-		"3": "",
-		"4": "",
-		"5": "",
-		"6": "",
-		"7": "",
-		"8": "",
-		"9": ""
-		}
-	},
-	
-	"cpu": {
-	"interval": 30,
-	"format": " {usage}%",
-	"on-click": "kitty htop"
-	},
-
-	"memory": {
-	"interval": 30,
-	"format": " {percentage}%",
-	"on-click": "kitty htop"
-	},
-
-	"clock": {
-	"interval": 60,
-	"tooltip": true,
-	"format": " {:%H:%M}",
-	"tooltip-format": " {:%Y-%m-%d}"
-	},
-
-	"network": {
-    	"format-wifi": " {essid}  {bandwidthTotalBytes}",
-    	"format-ethernet": " Wired  {bandwidthTotalBytes}",
-    	"format-disconnected": " Disconnected",
-	"tooltip-format-wifi": "{ipaddr}/{cidr}",
-	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
-	"tooltip-format-disconnected": "😭",
-	"on-click": "kitty nmtui"
-	},
-
-	"wireplumber": {
-	"format": "{icon}{volume}%",
-	"format-muted": " ",
-	"format-icons": [" ", " ", " "],
-	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-	},
-
-	"backlight": {
-	"device": "amd_backlight",
-	"format": "{icon}{percent}%",
-	"format-icons": [" ", " ", " ", " "],
-	"scroll-step": 5
-	},
-
-	"bluetooth": {
-	"format": " {status}",
-	"format-disabled": "", 
-	"format-connected": " {device_alias}",
-	"format-connected-battery": " {device_alias}({device_battery_percentage}%)",
-	"on-click": "kitty bluetoothctl"
-	},
-
-	"battery": {
-	"bat": "BAT1",
-	"adapter": "ACAD",
-	"interval": 60,
-	"states": {
-        "warning": 15,
-        "critical": 5
-		},
-	"format": " {capacity}%"
-	},
-
-	"tray": {
-    	"icon-size": 15,
-	"spacing": 5
-	}
+  	"layer": "top",
+  	"position": "top",
+  	"margin-top": 0,
+  	"margin-left": 0,
+  	"margin-right": 0,
+	"id": "waybar-top",
+	"classname": "waybar-top",
+	"include": [
+	"~/.config/waybar/modules.jsonc",
+	"~/.config/waybar/custom.jsonc"
+		],
+	"modules-left": [
+	"custom/logo",
+	"custom/dot-alt",
+	"hyprland/workspaces",
+	"custom/dot",
+	"cpu"
+		],
+	"modules-center": [
+	"clock"
+		],
+	"modules-right": [
+	"network",
+	"custom/dot",
+	"wireplumber",
+	"custom/dot",
+	"backlight",
+	"custom/dot",
+	"bluetooth",
+	"custom/dot",
+	"battery",
+	"custom/dot-alt",
+	"tray"
+		],
+	"height": 40
 }

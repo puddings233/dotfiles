@@ -1,0 +1,15 @@
+{
+	"custom/dot": {
+	"format": "",
+	"tooltip": false
+  		},
+	"custom/dot-alt": {
+	"format": "",
+	"tooltip": false
+  		},
+	"custom/logo": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "wofi -s ~/.cache/wal/colors-rofi-light.rasi -n -I -b -i --show drun"
+  		}
+}
