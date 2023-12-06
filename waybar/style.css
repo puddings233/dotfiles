@@ -29,8 +29,8 @@ tooltip label {
   font-size: 14px;
   color: alpha(@color7, 0.6);
   background: transparent;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -38,8 +38,8 @@ tooltip label {
   font-size: 14px;
   color: alpha(@color7, 0.8);
   background: transparent;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -48,8 +48,8 @@ tooltip label {
   font-size: 16px;
   margin-top: 2px;
   margin-bottom: 2px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 18px;
@@ -111,8 +111,8 @@ button:hover {
   border-radius: 18px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-top: 2px;
   margin-bottom: 2px;
   min-width: 20px;
