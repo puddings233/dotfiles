@@ -18,7 +18,8 @@
 	"cpu"
 		],
 	"modules-center": [
-	"clock"
+	"clock",
+	"mpris"
 		],
 	"modules-right": [
 	"network",

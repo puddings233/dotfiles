@@ -54,6 +54,20 @@
 	"format": " {:%H:%M}",
 	"tooltip-format": "{:%Y-%m-%d %H:%M}"
   },
+
+	"mpris": {
+	"format": "{player_icon} {artist} - {title}",
+	"format-paused": "{status_icon} pause",
+	"format-stopped": "{status_icon} no audio",
+	"player-icons": {
+		"default": ""
+	},
+	"status-icons": {
+		"paused": "",
+		"stopped": ""
+	}
+  },
+
 	"network": {
 	"interval": 30,
 	"format-wifi": " {essid}",

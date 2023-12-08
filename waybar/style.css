@@ -94,6 +94,7 @@ button:hover {
 
 #cpu, 
 #clock, 
+#mpris,
 #network, 
 #backlight, 
 #bluetooth,
@@ -133,8 +134,13 @@ button:hover {
 #bluetooth {
   color: @color5;
 }
+
 #network {
   color: @color4;
+}
+
+#mpris {
+  color: @color5;
 }
 
 #clock {
