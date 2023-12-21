@@ -21,6 +21,9 @@ local mappings = {
 	{ key = 'K',		func = '5l',		mod = 'n' },
 	{ key = 'S',		func = ':w<CR>',	mod = 'n' },
 	{ key = 'Q',		func = ':q<CR>',	mod = 'n' },
+
+	--plugins
+	{ key = 'MDP',		func = '<Plug>MarkdownPreview',	mod = 'n' },
 };
 
 for i, mapping in ipairs(mappings) do
