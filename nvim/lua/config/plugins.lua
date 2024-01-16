@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 
 require("lazy").setup({
 	{require("config.plugins.fcitx"),
+	require("config.plugins.coq_nvim"),
 	require("config.plugins.markdown")},
 })
 

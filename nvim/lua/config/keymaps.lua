@@ -24,6 +24,7 @@ local mappings = {
 
 	--plugins
 	{ key = 'MDP',		func = '<Plug>MarkdownPreview',	mod = 'n' },
+	{ key = 'COQ',		func = ':COQnow<CR>',	mod = 'n' },
 };
 
 for i, mapping in ipairs(mappings) do
