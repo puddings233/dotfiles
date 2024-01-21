@@ -13,14 +13,11 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
 
---Autostart function should probably go before require.
-vim.g.mkdp_auto_start = 1  --markdown preview
-vim.g.coq_settings = { auto_start = true } --COQ
-
 require("lazy").setup({
 	{require("config.plugins.everforest"),
 	require("config.plugins.fcitx"),
 	require("config.plugins.coq_nvim"),
+	require("config.plugins.nvim_lspconfig"),
 	require("config.plugins.markdown")},
 })
 
