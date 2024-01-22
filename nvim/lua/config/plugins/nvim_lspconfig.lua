@@ -1,9 +1,10 @@
 return {
 	"neovim/nvim-lspconfig",
+	ft={"lua", "python", "sh"},
 	config = function()
 		local lspconfig = require ("lspconfig")
 		local coq = require ("coq")
-		
+
 		--need package "lua-language-server" insteaded.
 		lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities({
 			Lua = {
