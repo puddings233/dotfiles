@@ -10,6 +10,6 @@
 	"custom/logo": {
 	"format": "",
 	"tooltip": false,
-	"on-click": "wofi -s ~/.cache/wal/colors-rofi-light.rasi -n -I -b -i --show drun"
+	"on-click": "wofi -n -I -b -i --show drun"
   		}
 }
