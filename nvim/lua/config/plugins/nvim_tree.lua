@@ -19,7 +19,7 @@ return {
 		vim.keymap.set('n', '<CR>',	api.node.open.tab,		opts('Open: New Tab'))
 		vim.keymap.set('n', '..',	api.tree.change_root_to_parent,	opts('Up'))
 		vim.keymap.set('n', 'YY',	api.fs.copy.absolute_path,	opts('Copy Absolute Path'))
-		vim.keymap.set('n', 'q',	api.tree.close,			opts('Close'))
+		vim.keymap.set('n', 'Q',	api.tree.close,			opts('Close'))
 		vim.keymap.set('n', 's',	api.tree.search_node,		opts('Search'))
 		vim.keymap.set('n', 'yy',	api.fs.copy.filename,		opts('Copy Name'))
 	end
