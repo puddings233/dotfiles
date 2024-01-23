@@ -1,6 +1,6 @@
 # myDotFiles  
 ## Screenshots  
-![](./screenshots/231208_19h11m44s_grim.png)  
+![](./screenshots/240124_07h14m50s_grim.png)  
 ## Some information  
 **Note: Make sure you are familiar with the contents of the config file so that you can address any potential issues that may arise.**  
 |tools|packageName[^1]|  
