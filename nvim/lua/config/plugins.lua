@@ -18,6 +18,7 @@ require("lazy").setup({
 	require("config.plugins.fcitx"),
 	require("config.plugins.coq_nvim"),
 	require("config.plugins.nvim_lspconfig"),
+	require("config.plugins.nvim_tree"),
 	require("config.plugins.markdown")},
 })
 
