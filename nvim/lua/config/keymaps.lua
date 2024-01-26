@@ -29,6 +29,6 @@ local mappings = {
 	{ key = '<C-l>',	func = ':Outline<CR>',	mod = 'n' },
 };
 
-for i, mapping in ipairs(mappings) do
+for _, mapping in ipairs(mappings) do
 	vim.keymap.set(mapping.mod, mapping.key, mapping.func, {noremap = true});
 end

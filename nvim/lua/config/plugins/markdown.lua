@@ -2,11 +2,19 @@ return {
 	"iamcco/markdown-preview.nvim",
 	cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 	build = function() vim.fn["mkdp#util#install"]() end,
+	-- autostart option must be included in the init function
 	init = function ()
 		vim.g.mkdp_auto_start = 1
 	end,
-	config = function()
-		vim.g.mkdp_theme = 'light'
+	-- other options, edit the new_ptions variable
+	config = function ()
+		local new_options_markdown = {
+			{ change = "mkdp_theme", to = "light" },
+			{ change = "mkdp_preview_options.sync_scroll_type", to = "{ sync_scroll_type = 'relative'}"},
+		}
+		for _,opt in ipairs(new_options_markdown) do
+			vim.g[opt.change] = opt.to
+		end
 	end,
 	ft = { "markdown" },
 }
