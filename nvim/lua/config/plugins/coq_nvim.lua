@@ -1,6 +1,7 @@
 return {
 	{"ms-jpq/coq_nvim",
 	branch = "coq",
+	-- if build failed, you can "cd" to install directory of COQ and run "python3 -m coq deps"
 	build = {":COQdeps"},
 	ft={"lua", "python", "sh"},
 	-- autostart option must be included in the init function
