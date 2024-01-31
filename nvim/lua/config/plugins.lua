@@ -15,6 +15,7 @@ vim.g.mapleader = " "
 
 require("lazy").setup({
 	{require("config.plugins.everforest"),
+	require("config.plugins.lualine"),
 	require("config.plugins.fcitx"),
 	require("config.plugins.coq_nvim"),
 	require("config.plugins.nvim_lspconfig"),
