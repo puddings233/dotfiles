@@ -1,95 +1,95 @@
 @import "colors-waybar.css"; /* need a link (ln -s ~/.cache/wal/colors-waybar.css .) */
 
 * {
-    font-family: Noto Sans,Material-Design-Iconic-Font;
-    font-size: 20px;
-    font-weight: bold;
-    color: @foreground;
-    border: none;
+	font-family: Noto Sans,Material-Design-Iconic-Font;
+	font-size: 20px;
+	font-weight: bold;
+	color: @foreground;
+	border: none;
 }
 
 window#waybar {
-  background-color: @background;
-  border: 2px solid alpha(@color0, 0.3);
-  border-radius: 10px;
+	background-color: rgba(21, 18, 20, 0.9);
+	border: 2px solid alpha(@color0, 0.3);
+	border-radius: 10px;
 }
 
 tooltip {
-  background-color: @color8;
-  border-radius: 12px;
-  border: 1px solid @background;
-  padding: 5px;
+	background-color: @color8;
+	border-radius: 12px;
+	border: 1px solid @background;
+	padding: 5px;
 }
 
 tooltip label {
-  color: @color5;
-  font-size: 16px;
+	color: @color5;
+	font-size: 16px;
 }
 
 #custom-dot {
-  font-size: 14px;
-  color: alpha(@color7, 0.6);
-  background: transparent;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+	font-size: 14px;
+	color: alpha(@color7, 0.6);
+	background: transparent;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 #custom-dot-alt {
-  font-size: 14px;
-  color: alpha(@color7, 0.8);
-  background: transparent;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+	font-size: 14px;
+	color: alpha(@color7, 0.8);
+	background: transparent;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #workspaces {
-  font-size: 16px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 18px;
-  border: 2px solid alpha(@color7, 0.8);
+	font-size: 16px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 18px;
+	border: 2px solid alpha(@color7, 0.8);
 }
 
 button:hover {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 #workspaces button:hover {
-  background: transparent;
-  border: none;
+	background: transparent;
+	border: none;
 }
 #workspaces button:hover label {
-  background: transparent;
-  color: @color5;
-  border: none;
+	background: transparent;
+	color: @color5;
+	border: none;
 }
 
 #workspaces button label {
-  color: @color4;
+	color: @color4;
 }
 
 #workspaces button.empty label {
-  color: alpha(@color7, 0.6);
+	color: alpha(@color7, 0.6);
 }
 
 #workspaces button.visible label{
-  color: @color4;
+	color: @color4;
 }
 
 #workspaces button.active label {
-  color: @color2;
+	color: @color2;
 }
 
 #workspaces button.urgent label{
-  background-color: @color1;
-  color: @foreground;
+	background-color: @color1;
+	color: @foreground;
 }
 
 
@@ -102,59 +102,59 @@ button:hover {
 #wireplumber, 
 #battery, 
 #tray{
-  /*margin-top: 5px;*/
-  /*margin-bottom: 5px;*/
-  padding-left: 10px;
-  padding-right: 10px;
+	/*margin-top: 5px;*/
+	/*margin-bottom: 5px;*/
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #tray {
-  background-color: alpha(@color7, 0.7);
-  border-radius: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  min-width: 20px;
+	background-color: alpha(@color7, 0.7);
+	border-radius: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	min-width: 20px;
 }
 
 #battery {
-  color: @color3;
+	color: @color3;
 }
 
 #wireplumber {
-  color: @color2;
+	color: @color2;
 }
 
 #backlight {
-  color: @color6;
+	color: @color6;
 }
 
 #bluetooth {
-  color: @color5;
+	color: @color5;
 }
 
 #network {
-  color: @color4;
+color: @color4;
 }
 
 #mpris {
-  color: @color5;
+	color: @color5;
 }
 
 #clock {
-  color: @color3;
+	color: @color3;
 }
 
 #cpu {
-  color: @color9;
+	color: @color9;
 }
 
 #custom-logo {
-  background-color: @background;
-  color: @color5;
-  margin-left: 20px;
-  margin-right: 10px;
+	background-color: @background;
+	color: @color5;
+	margin-left: 20px;
+	margin-right: 10px;
 }

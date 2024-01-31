@@ -8,7 +8,7 @@ return{
 		--Your setup opts here (leave empty to use defaults)
 		keymaps = {
 			show_help = '?',
-			close = {'Q'},
+			close = 'Q',
 			goto_location = nil,
 			peek_location = '<CR>',
 			goto_and_close = nil,

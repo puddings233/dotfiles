@@ -14,18 +14,21 @@
 		"7": "",
 		"8": "",
 		"9": ""
-    }
-  },
+	}
+	},
+
 	"hyprland/window": {
 	"format": "{title}",
 	"max-length": 25
-  },
+	},
+
 	"backlight": {
 	"device": "amd_backlight",
 	"format": "{icon}{percent}%",
 	"format-icons": [" ", " ", " ", " "],
 	"scroll-step": 5
-  },
+	},
+
 	"bluetooth": {
 	"format": " {status}",
 	"format-disabled": "", 
@@ -33,6 +36,7 @@
 	"format-connected-battery": " {device_alias}({device_battery_percentage}%)",
 	"on-click": "kitty bluetoothctl"
 	},
+
 	"battery": {
 	"bat": "BAT1",
 	"adapter": "ACAD",
@@ -40,20 +44,31 @@
 	"states": {
 	"warning": 15,
 	"critical": 5
-		},
+	},
 	"format-time": "{H}:{M}",
 	"format": " {capacity}%"
-  },
+	},
+
 	"cpu": {
 	"format": " {usage}%",
 	"interval": 30,
 	"on-click": "kitty htop"
-  },
+	},
+
 	"clock": {
 	"interval": 60,
-	"format": " {:%H:%M}",
-	"tooltip-format": "{:%Y-%m-%d %H:%M}"
-  },
+	"format": " {:%H:%M}", 
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+	"calendar": {
+		"mode" : "year",
+		"mode-mon-col" : 3,
+		"weeks-pos" : "right",
+		"on-scroll" : 1,
+		"format": {
+			"today" : "<span color='#ff6699'><b><u>{}</u></b></span>"
+		}
+	}
+	},
 
 	"mpris": {
 	"format": "{player_icon} {artist} - {title}",
@@ -66,7 +81,7 @@
 		"paused": "",
 		"stopped": ""
 	}
-  },
+	},
 
 	"network": {
 	"interval": 30,
@@ -77,7 +92,8 @@
 	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
 	"tooltip-format-disconnected": "😭",
 	"on-click": "kitty nmtui"
-  },
+	},
+
 	"wireplumber": {
 	"format": "{icon}{volume}%",
 	"format-muted": " ",
@@ -85,8 +101,9 @@
 	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
 	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
 	},
+
 	"tray": {
 	"icon-size": 20,
 	"spacing": 5
-  }
+	}
 }
