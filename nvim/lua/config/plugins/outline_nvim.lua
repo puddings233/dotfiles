@@ -1,6 +1,6 @@
 return{
 	"hedyhli/outline.nvim",
-	ft={"lua", "python", "sh"},
+	lazy = false,
 	config = function()
 		vim.keymap.set("n", "OL", "<cmd>Outline<CR>",
 		{ desc = "Toggle Outline" })

@@ -13,6 +13,6 @@ return {
 			diagnostic_line_highlight = true,
 			spell_foreground = true,
 			})
-			vim.cmd([[colorscheme everforest]])
-		end,
+		require("everforest").load()
+	end,
 	}

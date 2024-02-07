@@ -3,7 +3,7 @@ return {
 	branch = "coq",
 	-- if build failed, you can "cd" to install directory of COQ and run "python3 -m coq deps"
 	build = {":COQdeps"},
-	ft={"lua", "python", "sh"},
+	lazy = false,
 	-- autostart option must be included in the init function
 	init = function ()
 		vim.g.coq_settings = { auto_start = true }
@@ -31,11 +31,11 @@ return {
 },
 	{"ms-jpq/coq.artifacts",
 	branch = "artifacts",
-	ft={"lua", "python", "sh"},
+	lazy = false,
 },
 	{"ms-jpq/coq.thirdparty",
 	branch = "3p",
-	ft={"lua", "python", "sh"},
+	lazy = false,
 	config = function ()
 		require("coq_3p") {
 			{ src = "bc", short_name = "MATH", precision = 6 },

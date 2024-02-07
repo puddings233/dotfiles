@@ -1,7 +1,7 @@
 return{
 	"nvim-treesitter/nvim-treesitter",
 	-- need package "tree-sitter-cli" installed.
-	ft={ "lua", "python", "sh" },
+	lazy = false,
 	build = {":TSInstall c lua vim vimdoc query python bash"},
 	config = function ()
 		require'nvim-treesitter.configs'.setup {
