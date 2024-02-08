@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	ft={"lua", "python", "sh"},
+	lazy = false,
 	config = function()
 		local lspconfig = require ("lspconfig")
 		local coq = require ("coq")

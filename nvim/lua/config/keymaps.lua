@@ -1,32 +1,30 @@
 local mappings = {
 
 	-- disable arrow keys
-	{ key = '<up>',		func = '',		mod = 'n' },
-	{ key = '<up>',		func = '',		mod = 'i' },
-	{ key = '<down>',	func = '',		mod = 'n' },
-	{ key = '<down>',	func = '',		mod = 'i' },
-	{ key = '<left>',	func = '',		mod = 'n' },
-	{ key = '<left>',	func = '',		mod = 'i' },
-	{ key = '<right>',	func = '',		mod = 'n' },
-	{ key = '<right>',	func = '',		mod = 'i' },
+	{ key = '<up>',		func = '',		mod = { 'n', 'i' } },
+	{ key = '<right>',	func = '',		mod = { 'n', 'i' } },
+	{ key = '<down>',	func = '',		mod = { 'n', 'i' } },
+	{ key = '<left>',	func = '',		mod = { 'n', 'i' } },
+	{ key = '<right>',	func = '',		mod = { 'n', 'i' } },
 
 	-- remap movements
-	{ key = 'u',		func = 'k',		mod = 'n' },
-	{ key = 'k',		func = 'l',		mod = 'n' },
-	{ key = 'l',		func = '',		mod = 'n' },
+	{ key = 'u',		func = 'k',		mod = { 'n', 'v' } },
+	{ key = 'k',		func = 'l',		mod = { 'n', 'v' } },
+	{ key = 'l',		func = '',		mod = { 'n', 'v' } },
 	{ key = 'LL',		func = 'u',		mod = 'n' },
-	{ key = 'U',		func = '5k',		mod = 'n' },
-	{ key = 'H',		func = '5h',		mod = 'n' },
-	{ key = 'J',		func = '5j',		mod = 'n' },
-	{ key = 'K',		func = '5l',		mod = 'n' },
+	{ key = 'U',		func = '5k',		mod = { 'n', 'v' } },
+	{ key = 'H',		func = '5h',		mod = { 'n', 'v' } },
+	{ key = 'J',		func = '5j',		mod = { 'n', 'v' } },
+	{ key = 'K',		func = '5l',		mod = { 'n', 'v' } },
 	{ key = 'S',		func = ':w<CR>',	mod = 'n' },
 	{ key = 'Q',		func = ':q<CR>',	mod = 'n' },
 
-	--plugins
+	-- plugins
 	{ key = 'MDP',		func = '<Plug>MarkdownPreview',	mod = 'n' },
 	{ key = 'COQ',		func = ':COQnow<CR>',	mod = 'n' },
 	{ key = '<C-f>',	func = ':NvimTreeFocus<CR>',	mod = 'n' },
 	{ key = '<C-l>',	func = ':Outline<CR>',	mod = 'n' },
+
 };
 
 for _, mapping in ipairs(mappings) do
