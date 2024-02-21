@@ -21,7 +21,7 @@ nvim is below.
 |colorscheme|[everforest-nvim](https://github.com/neanias/everforest-nvim)
 |completion|[coq_nvim](https://github.com/ms-jpq/coq_nvim)
 |lsp|[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)[^3]
-|file explorer|[nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+|file explorer|[joshuto.nvim](https://github.com/theniceboy/joshuto.nvim)
 |symbols viewer|[outline.nvim](https://github.com/hedyhli/outline.nvim)
 |highlighting|[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)[^4]
 |markdown|[markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
