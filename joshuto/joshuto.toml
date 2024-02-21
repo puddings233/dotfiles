@@ -8,7 +8,7 @@ max_preview_size = 2097152000 # 2MB
 [display]
 mode = "default"
 collapse_preview = true
-column_ratio = [1, 3, 4]
+column_ratio = [1, 4, 3]
 show_borders = true
 show_hidden = false
 show_icons = true

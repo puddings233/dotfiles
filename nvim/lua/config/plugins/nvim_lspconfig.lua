@@ -33,5 +33,8 @@ return {
 
 		--need package "bash-language-server" insteaded.
 		lspconfig.bashls.setup(coq.lsp_ensure_capabilities({}))
+
+		--need package "marksman" insteaded.
+		lspconfig.marksman.setup(coq.lsp_ensure_capabilities({}))
 	end,
 }

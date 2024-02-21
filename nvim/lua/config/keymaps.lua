@@ -22,7 +22,7 @@ local mappings = {
 	-- plugins
 	{ key = 'MDP',		func = '<Plug>MarkdownPreview',	mod = 'n' },
 	{ key = 'COQ',		func = ':COQnow<CR>',	mod = 'n' },
-	{ key = '<C-f>',	func = ':NvimTreeFocus<CR>',	mod = 'n' },
+	{ key = '<C-f>',	func = ':lua require"joshuto".joshuto({ edit_in_tab = true })<CR>',	mod = 'n' },
 	{ key = '<C-l>',	func = ':Outline<CR>',	mod = 'n' },
 
 };
