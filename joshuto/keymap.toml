@@ -10,10 +10,13 @@ keymap = [
 
   { keys = ["Q"], commands = ["quit"] },
   { keys = ["H"], commands = ["toggle_hidden"] },
+  { keys = ["V"], commands = ["toggle_visual"] },
+  { keys = ["escape"], commands = ["escape"] },
 
   { keys = ["d", "d"], commands = ["delete_files"] },
   { keys = ["y", "y"], commands = ["copy_files"] },
   { keys = ["y", "n"], commands = ["copy_filename"] },
+  { keys = ["y", "d"], commands = ["copy_filepath"] },
   { keys = ["p", "p"], commands = ["paste_files"] },
   { keys = ["p", "o"], commands = ["paste_files --overwrite=true"] },
 

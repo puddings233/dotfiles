@@ -20,8 +20,8 @@ require("lazy").setup({
 	require("config.plugins.coq_nvim"),
 	require("config.plugins.nvim_lspconfig"),
 	require("config.plugins.treesitter"),
-	require("config.plugins.nvim_tree"),
 	require("config.plugins.outline_nvim"),
+	require("config.plugins.joshuto"),
 	require("config.plugins.markdown")},
 })
 
