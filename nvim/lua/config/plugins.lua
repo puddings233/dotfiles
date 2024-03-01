@@ -23,6 +23,7 @@ require("lazy").setup({
 	require("config.plugins.treesitter"),
 	require("config.plugins.outline_nvim"),
 	require("config.plugins.joshuto"),
+	require("config.plugins.bufferline"),
 	require("config.plugins.markdown")},
 })
 
