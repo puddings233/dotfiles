@@ -18,6 +18,7 @@ require("lazy").setup({
 	require("config.plugins.lualine"),
 	require("config.plugins.fcitx"),
 	require("config.plugins.coq_nvim"),
+	require("config.plugins.blankline"),
 	require("config.plugins.nvim_lspconfig"),
 	require("config.plugins.treesitter"),
 	require("config.plugins.outline_nvim"),
