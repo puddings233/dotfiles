@@ -1,6 +1,7 @@
 return {
 	"mawkler/modicator.nvim",
 	dependencies = "neanias/everforest-nvim",
+	lazy = false,
 
 	init = function ()
 		vim.opt.cursorline = true
