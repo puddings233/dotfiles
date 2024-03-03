@@ -9,6 +9,7 @@ return {
 	end,
 
 	config = function ()
+
 		require("modicator").setup({
 			integration = {
 				lualine = {
@@ -18,6 +19,7 @@ return {
 				},
 			}
 		})
+
 	end
 
 }

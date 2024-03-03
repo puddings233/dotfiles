@@ -2,6 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	ft={ "lua", "python", "sh", "markdown" },
 	config = function ()
+
 		local lsp = require ("lspconfig")
 		local coq = require ("coq")
 
@@ -44,5 +45,7 @@ return {
 
 		--need package "marksman" insteaded.
 		lsp.marksman.setup(coq.lsp_ensure_capabilities({}))
+
 	end,
+
 }
