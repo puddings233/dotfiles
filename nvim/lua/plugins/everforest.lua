@@ -10,6 +10,11 @@ return {
 			diagnostic_text_highlight = true,
 			diagnostic_line_highlight = true,
 			spell_foreground = true,
+
+			colours_override = function (palette)
+				palette.bg_visual = "#d8caac"
+			end
+
 			})
 
 		require("everforest").load()
