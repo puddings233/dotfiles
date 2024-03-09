@@ -1,15 +1,22 @@
 {
 	"custom/dot": {
-	"format": "",
-	"tooltip": false
-  		},
-	"custom/dot-alt": {
-	"format": "",
-	"tooltip": false
-  		},
+		"format": "󰿊",
+		"tooltip": false
+	},
+
+	"custom/dot-left": {
+		"format": "󰿈",
+		"tooltip": false
+	},
+
+	"custom/dot-right": {
+		"format": "d",
+		"tooltip": false
+	},
+
 	"custom/logo": {
-	"format": "",
-	"tooltip": false,
-	"on-click": "wofi -n -I -b -i --show drun"
-  		}
+		"format": "󰣇",
+		"tooltip": false,
+		"on-click": "wofi -n -I -b -i --show drun"
+	}
 }

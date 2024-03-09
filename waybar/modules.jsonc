@@ -1,109 +1,119 @@
 {
 	"hyprland/workspaces": {
-	"all-outputs": true,
-	"active-only": false,
-	"format": "{icon}",
-	"format-icons": {
-		"active": "",
-		"1": "",
-		"2": "",
-		"3": "",
-		"4": "",
-		"5": "",
-		"6": "",
-		"7": "",
-		"8": "",
-		"9": ""
-	}
+		"all-outputs": true,
+		"active-only": false,
+		"format": "{icon}",
+		"format-icons": {
+			"active": "󰮯",
+			"inactive": "󱥰",
+			"1": "󰲡",
+			"2": "󰲣",
+			"3": "󰲥",
+			"4": "󰲧",
+			"5": "󰲩",
+			"6": "󰲫",
+			"7": "󰲭",
+			"8": "󰲯",
+			"9": "󰲱"
+		}
 	},
 
 	"hyprland/window": {
-	"format": "{title}",
-	"max-length": 25
+		"format": "{title}",
+		"max-length": 25
 	},
 
 	"backlight": {
-	"device": "amd_backlight",
-	"format": "{icon}{percent}%",
-	"format-icons": [" ", " ", " ", " "],
-	"scroll-step": 5
+		"device": "amd_backlight",
+		"format": "{icon}{percent}%",
+		"format-icons": ["󱩎", "󱩐", "󱩔", "󱩖"],
+		"scroll-step": 5
 	},
 
 	"bluetooth": {
-	"format": " {status}",
-	"format-disabled": "", 
-	"format-connected": " {device_alias}",
-	"format-connected-battery": " {device_alias}({device_battery_percentage}%)",
-	"on-click": "kitty bluetoothctl"
+		"format": "󰂯{status}",
+		"format-disabled": "",
+		"format-connected": "󰂱{device_alias}",
+		"format-connected-battery": "󰂱{device_alias}(󰥉{device_battery_percentage}%)",
+		"on-click": "kitty bluetoothctl"
 	},
 
 	"battery": {
-	"bat": "BAT1",
-	"adapter": "ACAD",
-	"full-at": 100,
-	"states": {
-	"warning": 15,
-	"critical": 5
-	},
-	"format-time": "{H}:{M}",
-	"format": " {capacity}%"
+		"bat": "BAT1",
+		"adapter": "ACAD",
+		"full-at": 100,
+		"states": {
+			"warning": 15,
+			"critical": 5
+		},
+		"format-time": "{H}:{M}",
+		"format": "󰂁{capacity}%"
 	},
 
 	"cpu": {
-	"format": " {usage}%",
-	"interval": 30,
-	"on-click": "kitty htop"
+		"format": "󰍛{usage}%",
+		"interval": 30,
+		"on-click": "kitty htop"
 	},
 
 	"clock": {
-	"interval": 60,
-	"format": " {:%H:%M}", 
-	"tooltip-format": "<tt><small>{calendar}</small></tt>",
-	"calendar": {
-		"mode" : "year",
-		"mode-mon-col" : 3,
-		"weeks-pos" : "right",
-		"on-scroll" : 1,
-		"format": {
-			"today" : "<span color='#ff6699'><b><u>{}</u></b></span>"
-		}
-	}
+		"interval": 60,
+		"format": "󱑎{:%H:%M}",
+		"tooltip-format": "\n<span size='9pt' font='Noto Sans Mono CJK SC'>{calendar}</span>",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ffdd'><b>{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+			}
+		},
 	},
 
 	"mpris": {
-	"format": "{player_icon} {artist} - {title}",
-	"format-paused": "{status_icon} pause",
-	"format-stopped": "{status_icon} no audio",
-	"player-icons": {
-		"default": ""
-	},
-	"status-icons": {
-		"paused": "",
-		"stopped": ""
-	}
+		"format": "{player_icon}{artist} - {title}",
+		"format-paused": "{status_icon}pause",
+		"format-stopped": "{status_icon}no audio",
+		"player-icons": {
+			"default": "󰐍"
+		},
+		"status-icons": {
+			"paused": "󰏦",
+			"stopped": "󰙧"
+		}
 	},
 
 	"network": {
-	"interval": 30,
-	"format-wifi": " {essid}",
-	"format-ethernet": " Wired",
-	"format-disconnected": " Disconnected",
-	"tooltip-format-wifi": "{ipaddr}/{cidr}",
-	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
-	"tooltip-format-disconnected": "😭",
-	"on-click": "kitty nmtui"
+		"interval": 30,
+		"format-wifi": "󰖩{essid}",
+		"format-ethernet": "󰲝Wired",
+		"format-disconnected": "󰖪Disconnected",
+		"tooltip-format-wifi": "{ipaddr}/{cidr}",
+		"tooltip-format-ethernet": "{ipaddr}/{cidr}",
+		"tooltip-format-disconnected": "󰱭",
+		"on-click": "kitty nmtui"
 	},
 
-	"wireplumber": {
-	"format": "{icon}{volume}%",
-	"format-muted": " ",
-	"format-icons": [" ", " ", " "],
+	"pulseaudio": {
+		"format": "{icon}{volume}%",
+		"format-bluetooth": "󰥰{volume}%",
+		"format-muted": "󰖁",
+		"format-icons": {
+			"headphone": "󰋋",
+			"headset": "󰋎",
+			"default": ["󰕿", "󰖀", "󰕾"],
+		},
 	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+	"on-click": "wpctl status",
 	},
 
 	"tray": {
-	"icon-size": 20,
-	"spacing": 5
-	}
+		"icon-size": 20,
+		"spacing": 5
+	},
 }

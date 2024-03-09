@@ -1,38 +1,40 @@
 {
-  	"layer": "top",
-  	"position": "top",
-  	"margin-top": 0,
-  	"margin-left": 0,
-  	"margin-right": 0,
+	"layer": "top",
+	"position": "top",
+	"margin-top": 0,
+	"margin-left": 3,
+	"margin-right": 3,
 	"id": "waybar-top",
 	"classname": "waybar-top",
 	"include": [
-	"~/.config/waybar/modules.jsonc",
-	"~/.config/waybar/custom.jsonc"
-		],
+		"~/.config/waybar/modules.jsonc",
+		"~/.config/waybar/custom.jsonc"
+	],
+
 	"modules-left": [
-	"custom/logo",
-	"custom/dot-alt",
-	"hyprland/workspaces",
-	"custom/dot",
-	"cpu"
-		],
+		"custom/logo",
+		"custom/dot-left",
+		"hyprland/workspaces",
+		"custom/dot",
+		"cpu"
+	],
+
 	"modules-center": [
-	"clock",
-	"mpris"
-		],
+		"clock",
+		"mpris"
+	],
+
 	"modules-right": [
-	"network",
-	"custom/dot",
-	"wireplumber",
-	"custom/dot",
-	"backlight",
-	"custom/dot",
-	"bluetooth",
-	"custom/dot",
-	"battery",
-	"custom/dot-alt",
-	"tray"
-		],
-	"height": 40
+		"network",
+		"custom/dot",
+		"pulseaudio",
+		"custom/dot",
+		"backlight",
+		"custom/dot",
+		"bluetooth",
+		"custom/dot",
+		"battery",
+		"custom/dot-right",
+		"tray"
+	],
 }
