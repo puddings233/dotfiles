@@ -10,8 +10,10 @@
 	},
 
 	"custom/dot-right": {
-		"format": "d",
-		"tooltip": false
+		"exec": "lua ~/.config/waybar/script/hypridle.lua check",
+		"interval": 10,
+		"tooltip": false,
+		"on-click": "lua ~/.config/waybar/script/hypridle.lua switch"
 	},
 
 	"custom/logo": {
