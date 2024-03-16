@@ -10,10 +10,10 @@
 	},
 
 	"custom/dot-right": {
-		"exec": "lua ~/.config/waybar/script/hypridle.lua check",
+		"exec": "~/.config/waybar/script/hypridle.lua check",
 		"interval": 10,
 		"tooltip": false,
-		"on-click": "lua ~/.config/waybar/script/hypridle.lua switch"
+		"on-click": "~/.config/waybar/script/hypridle.lua switch"
 	},
 
 	"custom/logo": {

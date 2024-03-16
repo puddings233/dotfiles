@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/usr/bin/env lua
 local status = os.execute("pgrep hypridle >> /dev/null")
 
 local function check_status()
