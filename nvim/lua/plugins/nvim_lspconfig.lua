@@ -9,21 +9,29 @@ return {
 		--need package "lua-language-server" insteaded.
 		lsp.lua_ls.setup(coq.lsp_ensure_capabilities({
 			cmd = {"lua-language-server", "--locale=zh-cn"},
-			Lua = {
-				runtime = {
-					version = "LuaJIT"
-				},
-				completion = {
-					enable = true,
-					callSnippet = "Both",
-					keywordSnippet = "Both",
-					showWord = "Enable",
-				},
-				hint = {
-					enable = true,
-					setType = true,
-				},
-		}
+			settings = {
+				Lua = {
+					runtime = {
+						version = "Lua 5.4"
+					},
+					completion = {
+						enable = true,
+						callSnippet = "Both",
+						keywordSnippet = "Both",
+						showWord = "Enable",
+					},
+					hint = {
+						enable = true,
+						setType = true,
+					},
+					workspace = {
+						checkThirdParty = "Disable",
+						library = {
+							vim.env.VIMRUNTIME
+						}
+					}
+				}
+			}
 		}))
 
 		--need package "pyright" insteaded.

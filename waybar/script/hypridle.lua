@@ -22,7 +22,7 @@ function Run_hypridle_lua()
 		check_status()
 	elseif arg[1] == "switch" then
 		switch_status()
- end
+	end
 end
 
 Run_hypridle_lua()
