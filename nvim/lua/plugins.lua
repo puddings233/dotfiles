@@ -22,6 +22,7 @@ require("lazy").setup({
 	require("plugins.coq_nvim"),
 	require("plugins.blankline"),
 	require("plugins.nvim_lspconfig"),
+	require("plugins.lsp_notify"),
 	require("plugins.treesitter"),
 	require("plugins.outline_nvim"),
 	require("plugins.joshuto"),
