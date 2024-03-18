@@ -1,8 +1,37 @@
 #!/usr/bin/env lua
-local status = os.execute("pgrep hypridle >> /dev/null")
+
+local function get_pid()
+	local command = io.popen("pgrep hypridle")
+	if command ~= nil then
+		local pid = command:read("*a")
+		command:close()
+		pid = pid:gsub("\n$", "")
+		return pid
+	else
+		return nil
+	end
+end
+
+local function get_status()
+	local file_dir = "cat /proc/" .. get_pid() .. "/status | grep State"
+	local status_file = io.popen(file_dir)
+	if status_file ~= nil then
+		local state = status_file:read("*a")
+		state = state:gsub("\n$", "")
+		if state == "State:	S (sleeping)" then
+			status_file:close()
+			return true
+		else
+			status_file:close()
+			return false
+		end
+	else
+		return nil
+	end
+end
 
 local function check_status()
-	if status ~= nil then
+	if get_status() then
 		print("d")
 	else
 		print("d")
@@ -10,10 +39,10 @@ local function check_status()
 end
 
 local function switch_status()
-	if status ~= nil then
-	os.execute("killall hypridle")
+	if get_status() then
+		os.execute("kill -STOP " .. get_pid())
 	else
-	os.execute("hypridle &")
+		os.execute("kill -CONT " .. get_pid())
 	end
 end
 
