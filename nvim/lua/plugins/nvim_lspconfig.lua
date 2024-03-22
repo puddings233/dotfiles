@@ -27,7 +27,7 @@ return {
 					workspace = {
 						checkThirdParty = "Disable",
 						library = {
-							vim.env.VIMRUNTIME
+							vim.env.VIMRUNTIME,
 						}
 					}
 				}
