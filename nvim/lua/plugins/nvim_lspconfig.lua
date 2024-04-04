@@ -1,6 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
-	ft={ "lua", "python", "sh", "markdown" },
+	ft={ "lua", "python", "sh", "gitcommit", "tex", "markdown" },
 	config = function ()
 
 		local lsp = require ("lspconfig")
@@ -51,8 +51,15 @@ return {
 		--need package "bash-language-server" insteaded.
 		lsp.bashls.setup(coq.lsp_ensure_capabilities({}))
 
-		--need package "marksman" insteaded.
-		lsp.marksman.setup(coq.lsp_ensure_capabilities({}))
+		--need package "ltex-ls-bin" insteaded.
+		lsp.ltex.setup(coq.lsp_ensure_capabilities({
+			settings = {
+				ltex = {
+					language = "en",
+					checkFrequency = "save",
+				},
+			},
+		}))
 
 	end,
 
