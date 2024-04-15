@@ -1,7 +1,7 @@
 #!/usr/bin/env lua
 
 local function get_pid()
-	local command = io.popen("pgrep hypridle")
+	local command = io.popen("pgrep -x hypridle")
 	if command ~= nil then
 		local pid = command:read("*a")
 		command:close()
