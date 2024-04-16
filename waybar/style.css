@@ -1,9 +1,9 @@
 @import "colors-waybar.css"; /* need a link (ln -s ~/.cache/wal/colors-waybar.css .) */
 
 * {
-	font-family: Noto Sans Mono, NotoSans Nerd Font;
+	font-family: regular-script;
 	font-size: 20px;
-	font-weight: bold;
+	font-weight: normal;
 	color: @foreground;
 	border: none;
 }
@@ -35,8 +35,9 @@ tooltip label {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-#custom-dot-left
-#custom-dot-right {
+
+#custom-weather
+#custom-hypridle {
 	font-size: 14px;
 	color: alpha(@color7, 0.8);
 	background: transparent;
