@@ -13,7 +13,8 @@
 
 	"modules-left": [
 		"custom/logo",
-		"custom/dot-left",
+		"custom/hypridle",
+		"custom/weather",
 		"hyprland/workspaces",
 		"custom/dot",
 		"cpu"
@@ -34,7 +35,6 @@
 		"bluetooth",
 		"custom/dot",
 		"battery",
-		"custom/dot-right",
 		"tray"
 	],
 }

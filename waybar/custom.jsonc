@@ -4,12 +4,16 @@
 		"tooltip": false
 	},
 
-	"custom/dot-left": {
-		"format": "󰿈",
-		"tooltip": false
+	//need package "wttrbar" installed.
+	"custom/weather": {
+		"format": " {}°",
+		"tooltip": true,
+		"interval": 3600,
+		"exec": "wttrbar --lang zh --hide-conditions --custom-indicator '{temp_C}'",
+		"return-type": "json"
 	},
 
-	"custom/dot-right": {
+	"custom/hypridle": {
 		"exec": "~/.config/waybar/script/hypridle.lua check",
 		"interval": 10,
 		"tooltip": false,

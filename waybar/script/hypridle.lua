@@ -32,9 +32,9 @@ end
 
 local function check_status()
 	if get_status() then
-		print("d")
+		print("")
 	else
-		print("d")
+		print("")
 	end
 end
 

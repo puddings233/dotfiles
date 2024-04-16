@@ -26,15 +26,15 @@
 	"backlight": {
 		"device": "amd_backlight",
 		"format": "{icon}{percent}%",
-		"format-icons": ["󱩎", "󱩐", "󱩔", "󱩖"],
+		"format-icons": ["󱩎 ", "󱩐 ", "󱩔 ", "󱩖 "],
 		"scroll-step": 5
 	},
 
 	"bluetooth": {
-		"format": "󰂯{status}",
+		"format": "󰂯 {status}",
 		"format-disabled": "",
-		"format-connected": "󰂱{device_alias}",
-		"format-connected-battery": "󰂱{device_alias}(󰥉{device_battery_percentage}%)",
+		"format-connected": "󰂱 {device_alias}",
+		"format-connected-battery": "󰂱 {device_alias}(󰥉 {device_battery_percentage}%)",
 		"on-click": "kitty bluetoothctl"
 	},
 
@@ -43,23 +43,23 @@
 		"adapter": "ACAD",
 		"full-at": 100,
 		"states": {
-			"warning": 15,
+			"warning": 20,
 			"critical": 5
 		},
 		"format-time": "{H}:{M}",
-		"format": "󰂁{capacity}%"
+		"format": "󰂁 {capacity}%"
 	},
 
 	"cpu": {
-		"format": "󰍛{usage}%",
+		"format": " {usage}%",
 		"interval": 30,
 		"on-click": "kitty htop"
 	},
 
 	"clock": {
 		"interval": 60,
-		"format": "󱑎{:%H:%M}",
-		"tooltip-format": "\n<span size='9pt' font='Noto Sans Mono CJK SC'>{calendar}</span>",
+		"format": "󱑎 {:%H:%M}",
+		"tooltip-format": "\n<span size='8pt' font='monospace'>{calendar}</span>",
 		"calendar": {
 			"mode": "year",
 			"mode-mon-col": 3,
@@ -79,33 +79,35 @@
 		"format-paused": "{status_icon}pause",
 		"format-stopped": "{status_icon}no audio",
 		"player-icons": {
-			"default": "󰐍"
+			"default": "󰐍 "
 		},
 		"status-icons": {
-			"paused": "󰏦",
-			"stopped": "󰙧"
+			"paused": "󰏦 ",
+			"stopped": "󰙧 "
 		}
 	},
 
 	"network": {
 		"interval": 30,
-		"format-wifi": "󰖩{essid}",
-		"format-ethernet": "󰲝Wired",
-		"format-disconnected": "󰖪Disconnected",
-		"tooltip-format-wifi": "{ipaddr}/{cidr}",
-		"tooltip-format-ethernet": "{ipaddr}/{cidr}",
+		"format-wifi": "󰖩",
+		"format-ethernet": "󰲝",
+		"format-disconnected": "󰖪",
+		"tooltip-format-wifi": "{essid}:{ipaddr}/{cidr}",
+		"tooltip-format-ethernet": "Wired:{ipaddr}/{cidr}",
 		"tooltip-format-disconnected": "󰱭",
 		"on-click": "kitty nmtui"
 	},
 
 	"pulseaudio": {
-		"format": "{icon}{volume}%",
-		"format-bluetooth": "󰥰{volume}%",
-		"format-muted": "󰖁",
+		"format": "{icon}{volume}%{format_source}",
+		"format-source": "  {volume}%",
+		"format-source-muted": "",
+		"format-bluetooth": "󰥰 {volume}%{format_source}",
+		"format-muted": "{format_source}",
 		"format-icons": {
-			"headphone": "󰋋",
-			"headset": "󰋎",
-			"default": ["󰕿", "󰖀", "󰕾"],
+			"headphone": "󰋋 ",
+			"headset": "󰋎 ",
+			"default": [" ", " ", " "],
 		},
 	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
 	"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
