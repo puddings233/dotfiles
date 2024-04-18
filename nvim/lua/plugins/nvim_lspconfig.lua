@@ -1,12 +1,12 @@
 return {
 	"neovim/nvim-lspconfig",
-	ft={ "lua", "python", "sh", "gitcommit", "tex", "markdown" },
+	ft={ "lua", "python", "sh", "gitcommit", "tex", "markdown", "yaml.docker-compose" },
 	config = function ()
 
 		local lsp = require ("lspconfig")
 		local coq = require ("coq")
 
-		--need package "lua-language-server" insteaded.
+		--need package "lua-language-server" instealled.
 		lsp.lua_ls.setup(coq.lsp_ensure_capabilities({
 			cmd = {"lua-language-server", "--locale=zh-cn"},
 			settings = {
@@ -34,7 +34,7 @@ return {
 			}
 		}))
 
-		--need package "pyright" insteaded.
+		--need package "pyright" instealled.
 		lsp.pyright.setup(coq.lsp_ensure_capabilities({
 			settings = {
 				python = {
@@ -48,10 +48,10 @@ return {
 			}
 		}))
 
-		--need package "bash-language-server" insteaded.
+		--need package "bash-language-server" instealled.
 		lsp.bashls.setup(coq.lsp_ensure_capabilities({}))
 
-		--need package "ltex-ls-bin" insteaded.
+		--need package "ltex-ls-bin" instealled.
 		lsp.ltex.setup(coq.lsp_ensure_capabilities({
 			settings = {
 				ltex = {
@@ -61,6 +61,8 @@ return {
 			},
 		}))
 
+		--need package "nodejs-compose-language-service" instealled
+		lsp.docker_compose_language_service.setup(coq.lsp_ensure_capabilities({}))
 	end,
 
 }
