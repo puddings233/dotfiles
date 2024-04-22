@@ -61,6 +61,18 @@ return {
 			},
 		}))
 
+		--need package "texlab" instealled.
+		lsp.texlab.setup(coq.lsp_ensure_capabilities({
+			settings = {
+				texlab = {
+					build = {
+						executable = "xelatex",
+						args = {},
+					}
+				},
+			}
+		}))
+
 		--need package "nodejs-compose-language-service" instealled
 		lsp.docker_compose_language_service.setup(coq.lsp_ensure_capabilities({}))
 	end,
