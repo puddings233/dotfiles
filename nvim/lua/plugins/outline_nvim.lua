@@ -1,5 +1,8 @@
 return{
 	"hedyhli/outline.nvim",
+	keys = {
+		{ '<C-l>', ':Outline<CR>', noremap = true },
+	},
 	config = function ()
 
 		require("outline").setup {

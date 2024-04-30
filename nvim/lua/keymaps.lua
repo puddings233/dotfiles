@@ -18,9 +18,6 @@ local mappings = {
 	{ key = 'K',	func = '5l',		mod = { 'n', 'v' } },
 	{ key = 'S',	func = ':w<CR>',	mod = 'n' },
 
-	-- this uses quit_or_delete_buffer function
-	{ key = 'Q',	func = ':lua quit_or_delete_buffer()<CR>',	mod = 'n' },
-
 	-- tab control
 	{ key = "th",	func = ':-tabnext<CR>',	mod = 'n' },
 	{ key = "tk",	func = ':+tabnext<CR>',	mod = 'n' },
@@ -28,7 +25,6 @@ local mappings = {
 	-- plugins
 	{ key = 'MDP',		func = '<Plug>MarkdownPreview',						mod = 'n' },
 	{ key = 'COQ',		func = ':COQnow<CR>',							mod = 'n' },
-	{ key = '<C-f>',	func = ':lua require"joshuto".joshuto({ edit_in_tab = true })<CR>',	mod = 'n' },
 	{ key = '<C-l>',	func = ':Outline<CR>',							mod = 'n' },
 
 };

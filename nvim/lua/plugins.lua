@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
 require("lazy").setup({
-	{require("plugins.everforest"),
+	{require("plugins.custom"),
+	require("plugins.everforest"),
 	require("plugins.lualine"),
 	require("plugins.scroll"),
 	require("plugins.modicator"),
