@@ -12,11 +12,16 @@ return {
 	config = function ()
 
 		require("modicator").setup({
+			highlights = {
+				defaults = {
+					bold = true,
+				}
+			},
 			integration = {
 				lualine = {
 					enabled = true,
 					mode_section = nil,
-					highlight = "bg",
+					highlight = "fg",
 				},
 			}
 		})
