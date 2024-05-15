@@ -1,0 +1,9 @@
+[Unit]
+Description=Undervolting CPU via amdctl.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "amdctl -m -p0 -v72"
+
+[Install]
+WantedBy=multi-user.target
